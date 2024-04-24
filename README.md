@@ -55,3 +55,21 @@ Congratulations! You have successfully set up Django for your project.
 Now that you have Django set up, you can start building your web application. Refer to the Django documentation for more information on how to get started: https://docs.djangoproject.com/
 
 Happy coding!
+
+
+# Create Model
+from django.db import models
+
+class YourModel(models.Model):
+    # Define your model fields here
+    field1 = models.CharField(max_length=100)
+    field2 = models.IntegerField()
+    field3 = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.field1
+
+# makemigrations
+python manage.py makemigrations
+
+python manage.py migrate
