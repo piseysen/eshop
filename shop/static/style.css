@@ -19,3 +19,7 @@ body {
   height: 250px;
 
 }
+
+.place-order-btn {
+  margin-top: 12px !important;
+}
